@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bhft.todo.get.GetTodosTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-12-13T15:47:28" hostname="Marys-MacBook-Air.local" time="1.017">
+  <properties/>
+  <testcase name="Set negative offset" classname="com.bhft.todo.get.GetTodosTests" time="0.08"/>
+  <testcase name="Set limit only, offset is empty" classname="com.bhft.todo.get.GetTodosTests" time="0.027"/>
+  <testcase name="testGetTodosWithOffsetAndLimit()" classname="com.bhft.todo.get.GetTodosTests" time="0.156"/>
+  <testcase name="Get empty ToDo list." classname="com.bhft.todo.get.GetTodosTests" time="0.1"/>
+  <testcase name="Check max limit value" classname="com.bhft.todo.get.GetTodosTests" time="0.294"/>
+  <testcase name="Get ToDo list with existing records" classname="com.bhft.todo.get.GetTodosTests" time="0.279"/>
+  <testcase name="Set invalid data type to limit" classname="com.bhft.todo.get.GetTodosTests" time="0.048"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "text": "Task 1",
+    "completed": false
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "text": "Task 2",
+    "completed": true
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "text": "Task 3",
+    "completed": false
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 4,
+    "text": "Task 4",
+    "completed": true
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 5,
+    "text": "Task 5",
+    "completed": false
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "text": "Task 1",
+    "completed": false
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "text": "Task 2",
+    "completed": true
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "text": "Task 3",
+    "completed": false
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 4,
+    "text": "Task 4",
+    "completed": true
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 5,
+    "text": "Task 5",
+    "completed": false
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 6,
+    "text": "Task 6",
+    "completed": true
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 7,
+    "text": "Task 7",
+    "completed": false
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 8,
+    "text": "Task 8",
+    "completed": true
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 9,
+    "text": "Task 9",
+    "completed": false
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 10,
+    "text": "Task 10",
+    "completed": true
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "text": "Task 1",
+    "completed": false
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+Request method:	POST
+Request URI:	http://localhost:8080/todos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "text": "Task 2",
+    "completed": true
+}
+HTTP/1.1 201 Created
+content-length: 0
+date: Fri, 13 Dec 2024 15:47:28 GMT
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
