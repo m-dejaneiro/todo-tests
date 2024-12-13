@@ -105,6 +105,7 @@ public class GetTodosTests extends BaseTest {
 
     @Test
     @Tag("Negative")
+    @Description("Set limit only, offset is empty")
     @DisplayName("Set limit only, offset is empty")
     public void testSetOnlyLimit() {
         ValidatedTodoRequest validatedTodoRequest = new ValidatedTodoRequest(RequestSpec.unauthSpec());
